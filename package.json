@@ -7,7 +7,8 @@
   "scripts": {
     "start": "node index.js",
     "debug": "DEBUG=* nodemon",
-    "setup-production":"npm i && cd client && pnpm install && pnpm build"
+    "setup-production":"pnpm install --prefix ./client --production=false && pnpm build --prefix ./client && npm install"
+
   },
   "keywords": [],
   "author": "Clarusway",
